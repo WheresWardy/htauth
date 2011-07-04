@@ -1,0 +1,10 @@
+htauth
+------
+
+Simple C replacements to emulate the Apache project's htpasswd and
+htdigest programs for servers without the Apache binaries installed
+(if you're using nginx, lighttpd etc).
+
+Building on GNU/Linux requires the UNIX crypt library (which should be
+there anyway), and there's a simple Makefile included to build the
+binaries with gcc.
