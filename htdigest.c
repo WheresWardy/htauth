@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
 		strcpy(password_first, argv[4]);
 	}
 
-	encrypted = crypt(password_first, password_first);
+	encrypted = (char *)crypt(password_first, password_first);
 
 	htpasswd_file = fopen(passwordfile, "a");
 	fprintf(htpasswd_file, "%s:%s:%s\n", username, realm, encrypted);
