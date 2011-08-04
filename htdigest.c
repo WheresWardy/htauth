@@ -20,8 +20,8 @@ int main(int argc, char **argv) {
 	}
 	
 	passwordfile = argv[1];
-	username = argv[2];
-	realm = argv[3];
+	realm = argv[2];
+	username = argv[3];
 
 	if(argc != 5) {
 		
